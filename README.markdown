@@ -1,9 +1,8 @@
-Sinatra sample application
+Start Player Application
 --------------------------
 
-This is a sample application using
-
-- Sinatra
-- Mongo Mapper
-- RSpec
-- Cucumber
+Version history:
+- 0.1.0
+  - Initial Sinatra app
+  - Initial Specs
+  - Initial Features
