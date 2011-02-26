@@ -8,7 +8,8 @@ Dir[File.expand_path( File.dirname( __FILE__ ) + '/controllers' + '/*' )].each {
 MongoMapper.connect(Sinatra::Base.environment)
 
 # Set the Sinatra configuration
+enable :sessions
 configure do
-    set :views, "#{File.dirname(__FILE__)}/views"
-      set :public, "#{File.dirname(__FILE__)}/public"
+  set :views, "#{File.dirname(__FILE__)}/views"
+  set :public, "#{File.dirname(__FILE__)}/public"
 end
