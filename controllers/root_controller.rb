@@ -1,5 +1,5 @@
 get '/' do
-  if session[:pickers].empty? || session[:pickers].nil?
+  if session[:pickers].nil? || session[:pickers].empty?
     pickers =  Picker.all.shuffle
   else
     pickers = session[:pickers]
