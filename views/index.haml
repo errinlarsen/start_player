@@ -1,3 +1,8 @@
-%h1 Hello World
 
-%p Content should go here
+%div#prev_nav
+  %a( href=back ) Prev
+
+= haml :_picker, :layout => false
+
+%div#next_nav
+  %a( href='/' ) Next
