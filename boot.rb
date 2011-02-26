@@ -2,8 +2,8 @@ require 'bundler/setup'
 require 'mongo_mapper'
 
 MongoMapper.config = {
-  :development  => {"uri" => "mongodb://localhost/sample-application"},
-  :test         => {"uri" => "mongodb://localhost/sample-application-test"},
+  :development  => {"uri" => "mongodb://localhost/start_player-dev"},
+  :test         => {"uri" => "mongodb://localhost/start_player-test"},
   :production   => {"uri" => ENV["MONGOHQ_URL"]}
 }
 
